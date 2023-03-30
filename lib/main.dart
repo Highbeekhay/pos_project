@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pos_project/menu_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,15 +33,15 @@ class _MyHomePageState extends State<MyHomePage> {
       drawer: Drawer(
         backgroundColor: Colors.black,
         child: Container(
-          padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+          padding: EdgeInsets.only(left: 20, right: 20, top: 20, bottom: 20),
           child: ListView(
             children: [
               Container(
                 child: Row(
                   children: [
-                    Icon(Icons.fastfood_outlined),
+                    Icon(Icons.fastfood_rounded),
                     SizedBox(
-                      width: 10,
+                      width: 5,
                     ),
                     Text(
                       'CosyPOS',
@@ -59,15 +60,26 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 30,
               ),
               ListTile(
-                title: Text(
-                  'Menu',
-                  style: TextStyle(
-                    color: Colors.white,
+                title: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Text(
+                    'Menu',
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
                   ),
                 ),
-                selected: true,
-                selectedTileColor: Colors.grey.shade900,
-                horizontalTitleGap: 200,
+                contentPadding: EdgeInsets.fromLTRB(20, 5, 20, 5),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const MenuPage(),
+                    ),
+                  );
+                },
               )
             ],
           ),
