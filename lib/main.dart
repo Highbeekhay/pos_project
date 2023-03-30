@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pos_project/menu_page.dart';
+import 'package:pos_project/orders_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -59,15 +60,42 @@ class _MyHomePageState extends State<MyHomePage> {
               SizedBox(
                 height: 30,
               ),
+              Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                child: ListTile(
+                  title: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    child: Text(
+                      'Menu',
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                  contentPadding: EdgeInsets.fromLTRB(20, 5, 20, 5),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const MenuPage(),
+                      ),
+                    );
+                  },
+                ),
+              ),
               ListTile(
                 title: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Text(
-                    'Menu',
+                    'Orders',
                     style: TextStyle(
-                      color: Colors.white,
+                      color: Colors.grey.shade500,
                     ),
                   ),
                 ),
@@ -76,11 +104,11 @@ class _MyHomePageState extends State<MyHomePage> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const MenuPage(),
+                      builder: (context) => const OrdersPage(),
                     ),
                   );
                 },
-              )
+              ),
             ],
           ),
         ),

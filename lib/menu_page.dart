@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:pos_project/menu_page.dart';
 
 class MenuPage extends StatefulWidget {
   const MenuPage({super.key});
@@ -105,7 +104,7 @@ class _MenuPageState extends State<MenuPage> {
                     Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: Colors.purple.shade50,
+                        color: Colors.purple.shade100,
                       ),
                       padding: EdgeInsets.fromLTRB(15, 20, 105, 15),
                       child: Column(
@@ -252,6 +251,13 @@ class _MenuPageState extends State<MenuPage> {
                         Row(
                           children: [
                             OutlinedButton(
+                              style: OutlinedButton.styleFrom(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                padding: EdgeInsets.zero,
+                                shadowColor: Colors.grey.shade800,
+                              ),
                               onPressed: () {},
                               child: Icon(
                                 Icons.remove,
@@ -271,6 +277,13 @@ class _MenuPageState extends State<MenuPage> {
                               width: 15,
                             ),
                             OutlinedButton(
+                              style: OutlinedButton.styleFrom(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                padding: EdgeInsets.zero,
+                                shadowColor: Colors.grey.shade800,
+                              ),
                               onPressed: () {},
                               child: Icon(
                                 Icons.add,
@@ -344,6 +357,13 @@ class _MenuPageState extends State<MenuPage> {
                         Row(
                           children: [
                             OutlinedButton(
+                              style: OutlinedButton.styleFrom(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                padding: EdgeInsets.zero,
+                                shadowColor: Colors.grey.shade800,
+                              ),
                               onPressed: () {},
                               child: Icon(
                                 Icons.remove,
@@ -364,6 +384,13 @@ class _MenuPageState extends State<MenuPage> {
                               width: 15,
                             ),
                             OutlinedButton(
+                              style: OutlinedButton.styleFrom(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                padding: EdgeInsets.zero,
+                                shadowColor: Colors.grey.shade800,
+                              ),
                               onPressed: () {},
                               child: Icon(
                                 Icons.add,
@@ -438,6 +465,13 @@ class _MenuPageState extends State<MenuPage> {
                         Row(
                           children: [
                             OutlinedButton(
+                              style: OutlinedButton.styleFrom(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                padding: EdgeInsets.zero,
+                                shadowColor: Colors.grey.shade800,
+                              ),
                               onPressed: () {},
                               child: Icon(
                                 Icons.remove,
@@ -457,6 +491,13 @@ class _MenuPageState extends State<MenuPage> {
                               width: 15,
                             ),
                             OutlinedButton(
+                              style: OutlinedButton.styleFrom(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                padding: EdgeInsets.zero,
+                                shadowColor: Colors.grey.shade800,
+                              ),
                               onPressed: () {},
                               child: Icon(
                                 Icons.add,
@@ -523,6 +564,13 @@ class _MenuPageState extends State<MenuPage> {
                         Row(
                           children: [
                             OutlinedButton(
+                              style: OutlinedButton.styleFrom(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                padding: EdgeInsets.zero,
+                                shadowColor: Colors.grey.shade800,
+                              ),
                               onPressed: () {},
                               child: Icon(
                                 Icons.remove,
@@ -542,6 +590,13 @@ class _MenuPageState extends State<MenuPage> {
                               width: 15,
                             ),
                             OutlinedButton(
+                              style: OutlinedButton.styleFrom(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                padding: EdgeInsets.zero,
+                                shadowColor: Colors.grey.shade800,
+                              ),
                               onPressed: () {},
                               child: Icon(
                                 Icons.add,
@@ -616,6 +671,13 @@ class _MenuPageState extends State<MenuPage> {
                         Row(
                           children: [
                             OutlinedButton(
+                              style: OutlinedButton.styleFrom(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                padding: EdgeInsets.zero,
+                                shadowColor: Colors.grey.shade800,
+                              ),
                               onPressed: () {},
                               child: Icon(
                                 Icons.remove,
@@ -635,6 +697,13 @@ class _MenuPageState extends State<MenuPage> {
                               width: 15,
                             ),
                             OutlinedButton(
+                              style: OutlinedButton.styleFrom(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                padding: EdgeInsets.zero,
+                                shadowColor: Colors.grey.shade800,
+                              ),
                               onPressed: () {},
                               child: Icon(
                                 Icons.add,
@@ -701,6 +770,13 @@ class _MenuPageState extends State<MenuPage> {
                         Row(
                           children: [
                             OutlinedButton(
+                              style: OutlinedButton.styleFrom(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                padding: EdgeInsets.zero,
+                                shadowColor: Colors.grey.shade800,
+                              ),
                               onPressed: () {},
                               child: Icon(
                                 Icons.remove,
@@ -720,6 +796,13 @@ class _MenuPageState extends State<MenuPage> {
                               width: 15,
                             ),
                             OutlinedButton(
+                              style: OutlinedButton.styleFrom(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                padding: EdgeInsets.zero,
+                                shadowColor: Colors.grey.shade800,
+                              ),
                               onPressed: () {},
                               child: Icon(
                                 Icons.add,
