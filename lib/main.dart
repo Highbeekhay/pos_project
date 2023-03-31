@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:pos_project/chat_page.dart';
+import 'package:pos_project/dashboard_page.dart';
 import 'package:pos_project/menu_page.dart';
 import 'package:pos_project/orders_page.dart';
+import 'package:pos_project/reservation_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -60,32 +63,27 @@ class _MyHomePageState extends State<MyHomePage> {
               SizedBox(
                 height: 30,
               ),
-              Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                child: ListTile(
-                  title: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    child: Text(
-                      'Menu',
-                      style: TextStyle(
-                        color: Colors.white,
-                      ),
+              ListTile(
+                title: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Text(
+                    'Menu',
+                    style: TextStyle(
+                      color: Colors.white,
                     ),
                   ),
-                  contentPadding: EdgeInsets.fromLTRB(20, 5, 20, 5),
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const MenuPage(),
-                      ),
-                    );
-                  },
                 ),
+                contentPadding: EdgeInsets.fromLTRB(20, 5, 20, 5),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const MenuPage(),
+                    ),
+                  );
+                },
               ),
               ListTile(
                 title: Container(
@@ -105,6 +103,72 @@ class _MyHomePageState extends State<MyHomePage> {
                     context,
                     MaterialPageRoute(
                       builder: (context) => const OrdersPage(),
+                    ),
+                  );
+                },
+              ),
+              ListTile(
+                title: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Text(
+                    'Reservation',
+                    style: TextStyle(
+                      color: Colors.grey.shade500,
+                    ),
+                  ),
+                ),
+                contentPadding: EdgeInsets.fromLTRB(20, 5, 20, 5),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const ReservationPage(),
+                    ),
+                  );
+                },
+              ),
+              ListTile(
+                title: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Text(
+                    'Chat',
+                    style: TextStyle(
+                      color: Colors.grey.shade500,
+                    ),
+                  ),
+                ),
+                contentPadding: EdgeInsets.fromLTRB(20, 5, 20, 5),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const ChatPage(),
+                    ),
+                  );
+                },
+              ),
+              ListTile(
+                title: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Text(
+                    'Dashboard',
+                    style: TextStyle(
+                      color: Colors.grey.shade500,
+                    ),
+                  ),
+                ),
+                contentPadding: EdgeInsets.fromLTRB(20, 5, 20, 5),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const DashboardPage(),
                     ),
                   );
                 },

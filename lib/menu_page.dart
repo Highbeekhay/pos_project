@@ -111,7 +111,7 @@ class _MenuPageState extends State<MenuPage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Icon(
-                            Icons.soup_kitchen,
+                            Icons.dinner_dining_rounded,
                             color: Colors.black,
                             weight: 20,
                           ),
@@ -149,7 +149,7 @@ class _MenuPageState extends State<MenuPage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Icon(
-                            Icons.room_service_rounded,
+                            Icons.ramen_dining_rounded,
                             color: Colors.black,
                             weight: 20,
                           ),
