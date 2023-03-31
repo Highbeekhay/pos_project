@@ -61,7 +61,7 @@ class _DashboardPageState extends State<DashboardPage> {
                     padding: EdgeInsets.fromLTRB(15, 15, 75, 10),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      color: Colors.purple.shade50,
+                      color: Colors.blueGrey.shade100,
                     ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -491,7 +491,7 @@ class _DashboardPageState extends State<DashboardPage> {
                     ),
                   ],
                 ),
-              )
+              ),
             ],
           ),
         ),

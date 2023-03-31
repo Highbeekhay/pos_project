@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:pos_project/order412_page.dart';
+import 'package:pos_project/order246_page.dart';
 
 class OrdersPage extends StatefulWidget {
   const OrdersPage({super.key});
@@ -11,388 +13,334 @@ class _OrdersPageState extends State<OrdersPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: true,
-        centerTitle: true,
-        title: Text('Order #412'),
-      ),
-      body: SingleChildScrollView(
-        physics: AlwaysScrollableScrollPhysics(),
-        scrollDirection: Axis.vertical,
-        child: Container(
-          padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
-                padding: EdgeInsets.fromLTRB(5, 25, 10, 25),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8),
-                  color: Colors.grey.shade800,
-                ),
-                child: Row(
-                  children: [
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.white,
-                        shape: CircleBorder(),
-                      ),
-                      onPressed: () {},
-                      child: Text(
-                        "1",
-                        style: TextStyle(
-                          color: Colors.black,
-                        ),
-                      ),
-                    ),
-                    Text(
-                      'Fish and chips',
-                      style: TextStyle(
-                        fontSize: 20,
-                      ),
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      "x1",
-                      style: TextStyle(
-                        fontSize: 20,
-                      ),
-                    ),
-                    SizedBox(
-                      width: 158,
-                    ),
-                    Text(
-                      "\$17.50",
-                      style: TextStyle(
-                        fontSize: 20,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(
-                height: 15,
-              ),
-              Container(
-                padding: EdgeInsets.fromLTRB(5, 25, 10, 25),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8),
-                  color: Colors.grey.shade800,
-                ),
-                child: Row(
-                  children: [
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.white,
-                        shape: CircleBorder(),
-                      ),
-                      onPressed: () {},
-                      child: Text(
-                        "2",
-                        style: TextStyle(
-                          color: Colors.black,
-                        ),
-                      ),
-                    ),
-                    Text(
-                      'Lemonade',
-                      style: TextStyle(
-                        fontSize: 20,
-                      ),
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      "x1",
-                      style: TextStyle(
-                        fontSize: 20,
-                      ),
-                    ),
-                    SizedBox(
-                      width: 205,
-                    ),
-                    Text(
-                      "\$7.25",
-                      style: TextStyle(
-                        fontSize: 20,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(
-                height: 15,
-              ),
-              Container(
-                padding: EdgeInsets.fromLTRB(5, 25, 10, 25),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8),
-                  color: Colors.grey.shade800,
-                ),
-                child: Row(
-                  children: [
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.white,
-                        shape: CircleBorder(),
-                      ),
-                      onPressed: () {},
-                      child: Text(
-                        "3",
-                        style: TextStyle(
-                          color: Colors.black,
-                        ),
-                      ),
-                    ),
-                    Text(
-                      'Cappuccino',
-                      style: TextStyle(
-                        fontSize: 20,
-                      ),
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      "x2",
-                      style: TextStyle(
-                        fontSize: 20,
-                      ),
-                    ),
-                    SizedBox(
-                      width: 192,
-                    ),
-                    Text(
-                      "\$8.00",
-                      style: TextStyle(
-                        fontSize: 20,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(
-                height: 15,
-              ),
-              Container(
-                padding: EdgeInsets.fromLTRB(5, 25, 10, 25),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8),
-                  color: Colors.grey.shade800,
-                ),
-                child: Row(
-                  children: [
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.white,
-                        shape: CircleBorder(),
-                      ),
-                      onPressed: () {},
-                      child: Text(
-                        "4",
-                        style: TextStyle(
-                          color: Colors.black,
-                        ),
-                      ),
-                    ),
-                    Text(
-                      'Apple pie',
-                      style: TextStyle(
-                        fontSize: 20,
-                      ),
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      "x2",
-                      style: TextStyle(
-                        fontSize: 20,
-                      ),
-                    ),
-                    SizedBox(
-                      width: 205,
-                    ),
-                    Text(
-                      "\$11.50",
-                      style: TextStyle(
-                        fontSize: 20,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(
-                height: 30,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text("Subtotal"),
-                  Text(
-                    "\$44.25",
-                    style: TextStyle(
-                      fontSize: 15,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text('Tax 10%'),
-                  Text(
-                    "\$4.43",
-                    style: TextStyle(
-                      fontSize: 15,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              Divider(),
-              SizedBox(
-                height: 10,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    "Total",
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  Text(
-                    "\$48.68",
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: 40,
-              ),
-              Text('Payment Method'),
-              SizedBox(
-                height: 10,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Column(
-                    children: [
-                      Container(
-                        padding: EdgeInsets.fromLTRB(60, 20, 60, 20),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(5),
-                          color: Colors.white,
-                        ),
-                        child: Icon(
-                          Icons.monetization_on_outlined,
-                          color: Colors.black,
-                        ),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Text(
-                        "Cash",
-                        style: TextStyle(
-                          fontSize: 20,
-                        ),
-                      )
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      Container(
-                        padding: EdgeInsets.fromLTRB(60, 20, 60, 20),
-                        decoration: BoxDecoration(
-                          border: Border.all(
-                            color: Colors.grey.shade800,
-                            width: 2,
-                          ),
-                          borderRadius: BorderRadius.circular(5),
-                        ),
-                        child: Icon(
-                          Icons.credit_card_outlined,
-                          color: Colors.white,
-                        ),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Text(
-                        "Debit Card",
-                        style: TextStyle(
-                          fontSize: 20,
-                        ),
-                      )
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      Container(
-                        padding: EdgeInsets.fromLTRB(60, 20, 60, 20),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(5),
-                          border: Border.all(
-                            color: Colors.grey.shade800,
-                            width: 2,
-                          ),
-                        ),
-                        child: Icon(
-                          Icons.qr_code,
-                          color: Colors.white,
-                        ),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Text(
-                        "E-Wallet",
-                        style: TextStyle(
-                          fontSize: 20,
-                        ),
-                      )
-                    ],
-                  )
-                ],
-              ),
-              SizedBox(
-                height: 60,
-              ),
-              Container(
-                padding: EdgeInsets.fromLTRB(200, 20, 195, 20),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(40),
-                  color: Colors.white,
-                ),
-                child: Text(
-                  'To Pay',
+      body: Container(
+        padding: EdgeInsets.fromLTRB(20, 20, 20, 40),
+        child: Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "Orders",
                   style: TextStyle(
-                    color: Colors.grey.shade800,
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
+                    fontSize: 30,
                   ),
                 ),
+                Container(
+                  padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Colors.grey.shade800,
+                  ),
+                  child: Row(
+                    children: [
+                      Text('Feb 4, 2023'),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Icon(
+                        Icons.keyboard_arrow_down_rounded,
+                      ),
+                    ],
+                  ),
+                )
+              ],
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              padding: EdgeInsets.fromLTRB(15, 15, 15, 25),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(5),
+                border: Border.all(
+                  width: 2,
+                  color: Colors.grey.shade800,
+                ),
               ),
-            ],
-          ),
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        'Today\'s upsale',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                        ),
+                      ),
+                      Text(
+                        'See All',
+                        style: TextStyle(
+                          decoration: TextDecoration.underline,
+                          color: Colors.white,
+                          fontSize: 20,
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        padding: EdgeInsets.fromLTRB(15, 15, 15, 15),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.grey.shade800,
+                        ),
+                        child: Icon(
+                          Icons.room_service,
+                          color: Colors.white,
+                        ),
+                      ),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      TextButton(
+                        style: ButtonStyle(
+                          overlayColor:
+                              MaterialStatePropertyAll(Colors.transparent),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const Order412Page(),
+                            ),
+                          );
+                        },
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Fish soup',
+                              style: TextStyle(
+                                fontSize: 22,
+                                color: Colors.white,
+                              ),
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Order:",
+                                  style: TextStyle(
+                                    fontSize: 17,
+                                    color: Colors.grey.shade500,
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 5,
+                                ),
+                                Text(
+                                  "412",
+                                  style: TextStyle(
+                                    fontSize: 17,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            )
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        padding: EdgeInsets.fromLTRB(15, 15, 15, 15),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.grey.shade800,
+                        ),
+                        child: Icon(
+                          Icons.room_service,
+                          color: Colors.white,
+                        ),
+                      ),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      TextButton(
+                        style: ButtonStyle(
+                          overlayColor: MaterialStatePropertyAll(
+                            Colors.transparent,
+                          ),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const Order246Page(),
+                            ),
+                          );
+                        },
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Bagnun soup',
+                              style:
+                                  TextStyle(fontSize: 22, color: Colors.white),
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Order:",
+                                  style: TextStyle(
+                                    fontSize: 17,
+                                    color: Colors.grey.shade500,
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 5,
+                                ),
+                                Text(
+                                  "246",
+                                  style: TextStyle(
+                                      fontSize: 17, color: Colors.white),
+                                ),
+                              ],
+                            )
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        padding: EdgeInsets.fromLTRB(15, 15, 15, 15),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.grey.shade800,
+                        ),
+                        child: Icon(
+                          Icons.room_service,
+                          color: Colors.white,
+                        ),
+                      ),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      TextButton(
+                        style: ButtonStyle(
+                          overlayColor: MaterialStatePropertyAll(
+                            Colors.transparent,
+                          ),
+                        ),
+                        onPressed: () {},
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Fried egg',
+                              style: TextStyle(
+                                fontSize: 22,
+                                color: Colors.white,
+                              ),
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Order:",
+                                  style: TextStyle(
+                                    fontSize: 17,
+                                    color: Colors.grey.shade500,
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 5,
+                                ),
+                                Text(
+                                  "98",
+                                  style: TextStyle(
+                                    fontSize: 17,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            )
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        padding: EdgeInsets.fromLTRB(15, 15, 15, 15),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.grey.shade800,
+                        ),
+                        child: Icon(
+                          Icons.room_service,
+                          color: Colors.white,
+                        ),
+                      ),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      TextButton(
+                        style: ButtonStyle(
+                          overlayColor: MaterialStatePropertyAll(
+                            Colors.transparent,
+                          ),
+                        ),
+                        onPressed: () {},
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Norwegian soup',
+                              style: TextStyle(
+                                fontSize: 22,
+                                color: Colors.white,
+                              ),
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Order:",
+                                  style: TextStyle(
+                                    fontSize: 17,
+                                    color: Colors.grey.shade500,
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 5,
+                                ),
+                                Text(
+                                  "82",
+                                  style: TextStyle(
+                                    fontSize: 17,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            )
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ],
         ),
       ),
     );
