@@ -163,7 +163,7 @@ class _OrdersPageState extends State<OrdersPage> {
                           color: Colors.grey.shade800,
                         ),
                         child: Icon(
-                          Icons.room_service,
+                          Icons.dinner_dining_rounded,
                           color: Colors.white,
                         ),
                       ),
@@ -228,7 +228,7 @@ class _OrdersPageState extends State<OrdersPage> {
                           color: Colors.grey.shade800,
                         ),
                         child: Icon(
-                          Icons.room_service,
+                          Icons.coffee,
                           color: Colors.white,
                         ),
                       ),
@@ -290,7 +290,7 @@ class _OrdersPageState extends State<OrdersPage> {
                           color: Colors.grey.shade800,
                         ),
                         child: Icon(
-                          Icons.room_service,
+                          Icons.soup_kitchen,
                           color: Colors.white,
                         ),
                       ),

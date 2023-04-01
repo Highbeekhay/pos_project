@@ -7,6 +7,7 @@ import 'package:pos_project/order412_page.dart';
 import 'package:pos_project/reservation_page.dart';
 import 'package:pos_project/orders_page.dart';
 import 'package:pos_project/settings_page.dart';
+import 'package:pos_project/enter_pin_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -889,6 +890,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 30,
               ),
               ListTile(
+                dense: true,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                enabled: true,
                 title: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
@@ -900,7 +906,6 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                 ),
-                contentPadding: EdgeInsets.fromLTRB(20, 5, 20, 5),
                 onTap: () {
                   Navigator.push(
                     context,
@@ -911,6 +916,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
               ),
               ListTile(
+                dense: true,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                enabled: true,
                 title: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
@@ -922,7 +932,6 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                 ),
-                contentPadding: EdgeInsets.fromLTRB(20, 5, 20, 5),
                 onTap: () {
                   Navigator.push(
                     context,
@@ -933,6 +942,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
               ),
               ListTile(
+                dense: true,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                enabled: true,
                 title: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
@@ -944,7 +958,6 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                 ),
-                contentPadding: EdgeInsets.fromLTRB(20, 5, 20, 5),
                 onTap: () {
                   Navigator.push(
                     context,
@@ -955,6 +968,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
               ),
               ListTile(
+                dense: true,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                enabled: true,
                 title: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
@@ -966,7 +984,6 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                 ),
-                contentPadding: EdgeInsets.fromLTRB(20, 5, 20, 5),
                 onTap: () {
                   Navigator.push(
                     context,
@@ -977,6 +994,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
               ),
               ListTile(
+                dense: true,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                enabled: true,
                 title: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
@@ -988,7 +1010,6 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                 ),
-                contentPadding: EdgeInsets.fromLTRB(20, 5, 20, 5),
                 onTap: () {
                   Navigator.push(
                     context,
@@ -999,6 +1020,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
               ),
               ListTile(
+                dense: true,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                enabled: true,
                 title: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
@@ -1010,7 +1036,6 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                 ),
-                contentPadding: EdgeInsets.fromLTRB(20, 5, 20, 5),
                 onTap: () {
                   Navigator.push(
                     context,
@@ -1021,6 +1046,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
               ),
               ListTile(
+                dense: true,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                enabled: true,
                 title: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
@@ -1032,7 +1062,6 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                 ),
-                contentPadding: EdgeInsets.fromLTRB(20, 5, 20, 5),
                 onTap: () {
                   Navigator.push(
                     context,
@@ -1057,31 +1086,54 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ),
                     Container(
-                      padding: EdgeInsets.fromLTRB(10, 10, 0, 10),
+                      padding: EdgeInsets.fromLTRB(10, 8, 0, 8),
                       margin: EdgeInsets.fromLTRB(0, 10, 140, 0),
                       foregroundDecoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30),
                         border:
                             Border.all(color: Colors.grey.shade800, width: 2),
                       ),
-                      child: Row(
-                        children: [
-                          CircleAvatar(
-                            backgroundColor: Colors.blueGrey.shade100,
-                            radius: 15,
-                            child: Text(
-                              "L",
-                              style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 20,
+                      child: TextButton(
+                        style: ButtonStyle(
+                          padding: MaterialStatePropertyAll(
+                            EdgeInsets.fromLTRB(0, 0, 0, 0),
+                          ),
+                          overlayColor: MaterialStatePropertyAll(
+                            Colors.transparent,
+                          ),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const EnterPinPage(),
+                            ),
+                          );
+                        },
+                        child: Row(
+                          children: [
+                            CircleAvatar(
+                              backgroundColor: Colors.blueGrey.shade100,
+                              radius: 15,
+                              child: Text(
+                                "L",
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 20,
+                                ),
                               ),
                             ),
-                          ),
-                          SizedBox(
-                            width: 10,
-                          ),
-                          Text("Leslie K.")
-                        ],
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Text(
+                              "Leslie K.",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                     ),
                     Container(

@@ -182,26 +182,27 @@ class _Order246PageState extends State<Order246Page> {
                 height: 15,
               ),
               Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8),
-                    border: Border.all(
-                      color: Colors.grey.shade800,
-                      width: 2,
-                    ),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8),
+                  border: Border.all(
+                    color: Colors.grey.shade800,
+                    width: 2,
                   ),
-                  padding: EdgeInsets.fromLTRB(200, 10, 200, 10),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.add,
-                        size: 18,
-                      ),
-                      SizedBox(
-                        width: 3,
-                      ),
-                      Text("Add"),
-                    ],
-                  )),
+                ),
+                padding: EdgeInsets.fromLTRB(200, 10, 200, 10),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.add,
+                      size: 18,
+                    ),
+                    SizedBox(
+                      width: 3,
+                    ),
+                    Text("Add"),
+                  ],
+                ),
+              ),
               SizedBox(
                 height: 30,
               ),

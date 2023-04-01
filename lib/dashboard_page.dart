@@ -345,7 +345,7 @@ class _DashboardPageState extends State<DashboardPage> {
                             color: Colors.grey.shade800,
                           ),
                           child: Icon(
-                            Icons.room_service,
+                            Icons.dinner_dining,
                             color: Colors.white,
                           ),
                         ),
@@ -397,7 +397,7 @@ class _DashboardPageState extends State<DashboardPage> {
                             color: Colors.grey.shade800,
                           ),
                           child: Icon(
-                            Icons.room_service,
+                            Icons.emoji_food_beverage_sharp,
                             color: Colors.white,
                           ),
                         ),
@@ -449,7 +449,7 @@ class _DashboardPageState extends State<DashboardPage> {
                             color: Colors.grey.shade800,
                           ),
                           child: Icon(
-                            Icons.room_service,
+                            Icons.soup_kitchen,
                             color: Colors.white,
                           ),
                         ),

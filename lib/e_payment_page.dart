@@ -19,6 +19,9 @@ class EPaymentPage extends StatelessWidget {
                 padding: MaterialStatePropertyAll(
                   EdgeInsets.all(50),
                 ),
+                overlayColor: MaterialStatePropertyAll(
+                  Colors.black12,
+                ),
                 backgroundColor: MaterialStatePropertyAll(
                   Colors.transparent,
                 ),
