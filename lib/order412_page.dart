@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pos_project/e_payment_page.dart';
 import 'package:pos_project/orders_page.dart';
 
 class Order412Page extends StatefulWidget {
@@ -324,18 +325,33 @@ class _Order412PageState extends State<Order412Page> {
                   ),
                   Column(
                     children: [
-                      Container(
-                        padding: EdgeInsets.fromLTRB(60, 20, 60, 20),
-                        decoration: BoxDecoration(
-                          border: Border.all(
-                            color: Colors.grey.shade800,
-                            width: 2,
+                      TextButton(
+                        style: ButtonStyle(
+                          overlayColor: MaterialStatePropertyAll(
+                            Colors.transparent,
                           ),
-                          borderRadius: BorderRadius.circular(5),
                         ),
-                        child: Icon(
-                          Icons.credit_card_outlined,
-                          color: Colors.white,
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const EPaymentPage(),
+                            ),
+                          );
+                        },
+                        child: Container(
+                          padding: EdgeInsets.fromLTRB(60, 20, 60, 20),
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey.shade800,
+                              width: 2,
+                            ),
+                            borderRadius: BorderRadius.circular(5),
+                          ),
+                          child: Icon(
+                            Icons.credit_card_outlined,
+                            color: Colors.white,
+                          ),
                         ),
                       ),
                       SizedBox(

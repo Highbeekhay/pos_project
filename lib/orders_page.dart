@@ -13,6 +13,9 @@ class _OrdersPageState extends State<OrdersPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        automaticallyImplyLeading: true,
+      ),
       body: Container(
         padding: EdgeInsets.fromLTRB(20, 20, 20, 40),
         child: Column(

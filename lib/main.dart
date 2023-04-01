@@ -51,23 +51,31 @@ class _MyHomePageState extends State<MyHomePage> {
                   borderRadius: BorderRadius.circular(5),
                   color: Colors.grey.shade800,
                 ),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.search,
-                      color: Colors.grey.shade500,
+                child: TextButton(
+                  style: ButtonStyle(
+                    overlayColor: MaterialStatePropertyAll(
+                      Colors.black12,
                     ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      "Search",
-                      style: TextStyle(
+                  ),
+                  onPressed: () {},
+                  child: Row(
+                    children: [
+                      Icon(
+                        Icons.search,
                         color: Colors.grey.shade500,
-                        fontSize: 20,
                       ),
-                    ),
-                  ],
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text(
+                        "Search",
+                        style: TextStyle(
+                          color: Colors.grey.shade500,
+                          fontSize: 20,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
               SizedBox(
