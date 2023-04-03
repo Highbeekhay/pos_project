@@ -11,18 +11,18 @@ class EPaymentPage extends StatelessWidget {
         automaticallyImplyLeading: true,
       ),
       body: Container(
-        margin: EdgeInsets.fromLTRB(20, 50, 20, 20),
+        margin: const EdgeInsets.fromLTRB(20, 50, 20, 20),
         child: Column(
           children: [
             ElevatedButton(
               style: ButtonStyle(
-                padding: MaterialStatePropertyAll(
+                padding: const MaterialStatePropertyAll(
                   EdgeInsets.all(50),
                 ),
-                overlayColor: MaterialStatePropertyAll(
+                overlayColor: const MaterialStatePropertyAll(
                   Colors.black12,
                 ),
-                backgroundColor: MaterialStatePropertyAll(
+                backgroundColor: const MaterialStatePropertyAll(
                   Colors.transparent,
                 ),
                 side: MaterialStatePropertyAll(
@@ -31,18 +31,18 @@ class EPaymentPage extends StatelessWidget {
                     width: 2,
                   ),
                 ),
-                shape: MaterialStatePropertyAll(
+                shape: const MaterialStatePropertyAll(
                   CircleBorder(),
                 ),
               ),
               onPressed: () {},
-              child: Icon(
+              child: const Icon(
                 Icons.wifi,
                 color: Colors.white,
                 size: 50,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
             Text(
@@ -52,7 +52,7 @@ class EPaymentPage extends StatelessWidget {
                 fontSize: 20,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 180,
             ),
             Container(
@@ -63,8 +63,8 @@ class EPaymentPage extends StatelessWidget {
                   width: 2,
                 ),
               ),
-              padding: EdgeInsets.fromLTRB(200, 10, 210, 10),
-              child: Text("Cancel"),
+              padding: const EdgeInsets.fromLTRB(200, 10, 210, 10),
+              child: const Text("Cancel"),
             ),
           ],
         ),

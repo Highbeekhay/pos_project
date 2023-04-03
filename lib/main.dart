@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(useMaterial3: true),
-      home: MyHomePage(),
+      home: const MyHomePage(),
     );
   }
 }
@@ -39,21 +39,21 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(),
       body: Container(
-        padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
+        padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
         child: SingleChildScrollView(
-          physics: AlwaysScrollableScrollPhysics(),
+          physics: const AlwaysScrollableScrollPhysics(),
           scrollDirection: Axis.vertical,
           child: Column(
             children: [
               Container(
-                padding:
-                    EdgeInsets.only(left: 20, top: 10, right: 10, bottom: 10),
+                padding: const EdgeInsets.only(
+                    left: 20, top: 10, right: 10, bottom: 10),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(5),
                   color: Colors.grey.shade800,
                 ),
                 child: TextButton(
-                  style: ButtonStyle(
+                  style: const ButtonStyle(
                     overlayColor: MaterialStatePropertyAll(
                       Colors.black12,
                     ),
@@ -65,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         Icons.search,
                         color: Colors.grey.shade500,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 10,
                       ),
                       Text(
@@ -79,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               SingleChildScrollView(
@@ -90,21 +90,21 @@ class _MyHomePageState extends State<MyHomePage> {
                     Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: Color.fromARGB(255, 223, 222, 222),
+                        color: const Color.fromARGB(255, 223, 222, 222),
                       ),
-                      padding: EdgeInsets.fromLTRB(15, 20, 70, 15),
+                      padding: const EdgeInsets.fromLTRB(15, 20, 70, 15),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Icon(
+                          const Icon(
                             Icons.local_cafe,
                             color: Colors.black,
                             weight: 20,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 40,
                           ),
-                          Text(
+                          const Text(
                             "Breakfast",
                             style: TextStyle(
                               color: Colors.black,
@@ -122,7 +122,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Container(
@@ -130,19 +130,19 @@ class _MyHomePageState extends State<MyHomePage> {
                         borderRadius: BorderRadius.circular(10),
                         color: Colors.purple.shade100,
                       ),
-                      padding: EdgeInsets.fromLTRB(15, 20, 105, 15),
+                      padding: const EdgeInsets.fromLTRB(15, 20, 105, 15),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Icon(
+                          const Icon(
                             Icons.dinner_dining_rounded,
                             color: Colors.black,
                             weight: 20,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 40,
                           ),
-                          Text(
+                          const Text(
                             "Soups",
                             style: TextStyle(
                               color: Colors.black,
@@ -160,7 +160,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Container(
@@ -168,19 +168,19 @@ class _MyHomePageState extends State<MyHomePage> {
                         borderRadius: BorderRadius.circular(10),
                         color: Colors.blue.shade50,
                       ),
-                      padding: EdgeInsets.fromLTRB(15, 20, 105, 15),
+                      padding: const EdgeInsets.fromLTRB(15, 20, 105, 15),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Icon(
+                          const Icon(
                             Icons.ramen_dining_rounded,
                             color: Colors.black,
                             weight: 20,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 40,
                           ),
-                          Text(
+                          const Text(
                             "Pasta",
                             style: TextStyle(
                               color: Colors.black,
@@ -201,21 +201,21 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Divider(
                 color: Colors.grey.shade800,
                 thickness: 2,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    padding: EdgeInsets.fromLTRB(20, 10, 40, 10),
+                    padding: const EdgeInsets.fromLTRB(20, 10, 40, 10),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       color: Colors.grey.shade800,
@@ -232,14 +232,14 @@ class _MyHomePageState extends State<MyHomePage> {
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Icon(
                               Icons.arrow_forward_rounded,
                               color: Colors.grey.shade500,
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Text(
@@ -251,10 +251,10 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 25,
                         ),
-                        Text(
+                        const Text(
                           'Mushroom soup',
                           style: TextStyle(
                             fontSize: 20,
@@ -269,7 +269,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 40,
                         ),
                         Row(
@@ -288,16 +288,16 @@ class _MyHomePageState extends State<MyHomePage> {
                                 color: Colors.grey.shade500,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
-                            Text(
+                            const Text(
                               "0",
                               style: TextStyle(
                                 fontSize: 20,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
                             OutlinedButton(
@@ -309,7 +309,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 shadowColor: Colors.grey.shade800,
                               ),
                               onPressed: () {},
-                              child: Icon(
+                              child: const Icon(
                                 Icons.add,
                                 color: Colors.white,
                               ),
@@ -320,7 +320,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.fromLTRB(20, 10, 40, 10),
+                    padding: const EdgeInsets.fromLTRB(20, 10, 40, 10),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       color: Colors.purple.shade100,
@@ -337,14 +337,14 @@ class _MyHomePageState extends State<MyHomePage> {
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Icon(
                               Icons.arrow_forward_rounded,
                               color: Colors.grey.shade800,
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Text(
@@ -356,10 +356,10 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 25,
                         ),
-                        Text(
+                        const Text(
                           'Bagnum',
                           style: TextStyle(
                             fontSize: 20,
@@ -375,7 +375,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 40,
                         ),
                         Row(
@@ -389,22 +389,22 @@ class _MyHomePageState extends State<MyHomePage> {
                                 shadowColor: Colors.grey.shade800,
                               ),
                               onPressed: () {},
-                              child: Icon(
+                              child: const Icon(
                                 Icons.remove,
                                 color: Colors.black,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
-                            Text(
+                            const Text(
                               "1",
                               style: TextStyle(
                                 fontSize: 20,
                                 color: Colors.black,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
                             OutlinedButton(
@@ -416,7 +416,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 shadowColor: Colors.grey.shade800,
                               ),
                               onPressed: () {},
-                              child: Icon(
+                              child: const Icon(
                                 Icons.add,
                                 color: Colors.black,
                               ),
@@ -428,14 +428,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    padding: EdgeInsets.fromLTRB(20, 10, 40, 10),
+                    padding: const EdgeInsets.fromLTRB(20, 10, 40, 10),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         color: Colors.grey.shade800),
@@ -450,14 +450,14 @@ class _MyHomePageState extends State<MyHomePage> {
                                 color: Colors.grey.shade500,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Icon(
                               Icons.arrow_forward_rounded,
                               color: Colors.grey.shade500,
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Text(
@@ -468,10 +468,10 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 25,
                         ),
-                        Text(
+                        const Text(
                           'Cacciucco',
                           style: TextStyle(
                               fontSize: 20, fontWeight: FontWeight.bold),
@@ -483,7 +483,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             fontSize: 20,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 40,
                         ),
                         Row(
@@ -502,16 +502,16 @@ class _MyHomePageState extends State<MyHomePage> {
                                 color: Colors.grey.shade500,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
-                            Text(
+                            const Text(
                               "0",
                               style: TextStyle(
                                 fontSize: 20,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
                             OutlinedButton(
@@ -523,7 +523,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 shadowColor: Colors.grey.shade800,
                               ),
                               onPressed: () {},
-                              child: Icon(
+                              child: const Icon(
                                 Icons.add,
                                 color: Colors.white,
                               ),
@@ -534,7 +534,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.fromLTRB(20, 10, 40, 10),
+                    padding: const EdgeInsets.fromLTRB(20, 10, 40, 10),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         color: Colors.grey.shade800),
@@ -549,14 +549,14 @@ class _MyHomePageState extends State<MyHomePage> {
                                 color: Colors.grey.shade500,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Icon(
                               Icons.arrow_forward_rounded,
                               color: Colors.grey.shade500,
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Text(
@@ -567,10 +567,10 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 25,
                         ),
-                        Text(
+                        const Text(
                           'Fish soup',
                           style: TextStyle(
                               fontSize: 20, fontWeight: FontWeight.bold),
@@ -582,7 +582,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             fontSize: 20,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 40,
                         ),
                         Row(
@@ -601,16 +601,16 @@ class _MyHomePageState extends State<MyHomePage> {
                                 color: Colors.grey.shade500,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
-                            Text(
+                            const Text(
                               "0",
                               style: TextStyle(
                                 fontSize: 20,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
                             OutlinedButton(
@@ -622,7 +622,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 shadowColor: Colors.grey.shade800,
                               ),
                               onPressed: () {},
-                              child: Icon(
+                              child: const Icon(
                                 Icons.add,
                                 color: Colors.white,
                               ),
@@ -634,14 +634,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    padding: EdgeInsets.fromLTRB(20, 10, 40, 10),
+                    padding: const EdgeInsets.fromLTRB(20, 10, 40, 10),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         color: Colors.grey.shade800),
@@ -656,14 +656,14 @@ class _MyHomePageState extends State<MyHomePage> {
                                 color: Colors.grey.shade500,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Icon(
                               Icons.arrow_forward_rounded,
                               color: Colors.grey.shade500,
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Text(
@@ -674,10 +674,10 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 25,
                         ),
-                        Text(
+                        const Text(
                           'Vegan soup',
                           style: TextStyle(
                               fontSize: 20, fontWeight: FontWeight.bold),
@@ -689,7 +689,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             fontSize: 20,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 40,
                         ),
                         Row(
@@ -708,16 +708,16 @@ class _MyHomePageState extends State<MyHomePage> {
                                 color: Colors.grey.shade500,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
-                            Text(
+                            const Text(
                               "0",
                               style: TextStyle(
                                 fontSize: 20,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
                             OutlinedButton(
@@ -729,7 +729,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 shadowColor: Colors.grey.shade800,
                               ),
                               onPressed: () {},
-                              child: Icon(
+                              child: const Icon(
                                 Icons.add,
                                 color: Colors.white,
                               ),
@@ -740,7 +740,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.fromLTRB(20, 10, 40, 10),
+                    padding: const EdgeInsets.fromLTRB(20, 10, 40, 10),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         color: Colors.grey.shade800),
@@ -755,14 +755,14 @@ class _MyHomePageState extends State<MyHomePage> {
                                 color: Colors.grey.shade500,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Icon(
                               Icons.arrow_forward_rounded,
                               color: Colors.grey.shade500,
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Text(
@@ -773,10 +773,10 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 25,
                         ),
-                        Text(
+                        const Text(
                           'Norwegian soup',
                           style: TextStyle(
                               fontSize: 20, fontWeight: FontWeight.bold),
@@ -788,7 +788,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             fontSize: 20,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 40,
                         ),
                         Row(
@@ -807,16 +807,16 @@ class _MyHomePageState extends State<MyHomePage> {
                                 color: Colors.grey.shade500,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
-                            Text(
+                            const Text(
                               "0",
                               style: TextStyle(
                                 fontSize: 20,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
                             OutlinedButton(
@@ -828,7 +828,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 shadowColor: Colors.grey.shade800,
                               ),
                               onPressed: () {},
-                              child: Icon(
+                              child: const Icon(
                                 Icons.add,
                                 color: Colors.white,
                               ),
@@ -845,8 +845,8 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       bottomNavigationBar: Container(
-        padding: EdgeInsets.fromLTRB(170, 20, 50, 20),
-        margin: EdgeInsets.fromLTRB(20, 10, 20, 20),
+        padding: const EdgeInsets.fromLTRB(170, 20, 50, 20),
+        margin: const EdgeInsets.fromLTRB(20, 10, 20, 20),
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(40), color: Colors.white),
         child: Text(
@@ -861,12 +861,13 @@ class _MyHomePageState extends State<MyHomePage> {
       drawer: Drawer(
         backgroundColor: Colors.black,
         child: Container(
-          padding: EdgeInsets.only(left: 20, right: 20, top: 20, bottom: 20),
+          padding:
+              const EdgeInsets.only(left: 20, right: 20, top: 20, bottom: 20),
           child: ListView(
             children: [
               Container(
                 child: Row(
-                  children: [
+                  children: const [
                     Icon(Icons.lunch_dining),
                     SizedBox(
                       width: 5,
@@ -886,7 +887,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               ListTile(
@@ -899,7 +900,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                   ),
-                  child: Text(
+                  child: const Text(
                     'Menu',
                     style: TextStyle(
                       color: Colors.white,
@@ -1071,7 +1072,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   );
                 },
               ),
-              SizedBox(
+              const SizedBox(
                 height: 100,
               ),
               Container(
@@ -1086,15 +1087,15 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ),
                     Container(
-                      padding: EdgeInsets.fromLTRB(10, 8, 0, 8),
-                      margin: EdgeInsets.fromLTRB(0, 10, 140, 0),
+                      padding: const EdgeInsets.fromLTRB(10, 8, 0, 8),
+                      margin: const EdgeInsets.fromLTRB(0, 10, 140, 0),
                       foregroundDecoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30),
                         border:
                             Border.all(color: Colors.grey.shade800, width: 2),
                       ),
                       child: TextButton(
-                        style: ButtonStyle(
+                        style: const ButtonStyle(
                           padding: MaterialStatePropertyAll(
                             EdgeInsets.fromLTRB(0, 0, 0, 0),
                           ),
@@ -1115,7 +1116,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             CircleAvatar(
                               backgroundColor: Colors.blueGrey.shade100,
                               radius: 15,
-                              child: Text(
+                              child: const Text(
                                 "L",
                                 style: TextStyle(
                                   color: Colors.black,
@@ -1123,10 +1124,10 @@ class _MyHomePageState extends State<MyHomePage> {
                                 ),
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 10,
                             ),
-                            Text(
+                            const Text(
                               "Leslie K.",
                               style: TextStyle(
                                 color: Colors.white,
@@ -1137,8 +1138,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ),
                     Container(
-                      padding: EdgeInsets.fromLTRB(10, 10, 0, 10),
-                      margin: EdgeInsets.fromLTRB(0, 10, 110, 0),
+                      padding: const EdgeInsets.fromLTRB(10, 10, 0, 10),
+                      margin: const EdgeInsets.fromLTRB(0, 10, 110, 0),
                       foregroundDecoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30),
                         border:
@@ -1149,7 +1150,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           CircleAvatar(
                             backgroundColor: Colors.green.shade100,
                             radius: 15,
-                            child: Text(
+                            child: const Text(
                               "C",
                               style: TextStyle(
                                 color: Colors.black,
@@ -1157,16 +1158,16 @@ class _MyHomePageState extends State<MyHomePage> {
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 10,
                           ),
-                          Text("Cameron W.")
+                          const Text("Cameron W.")
                         ],
                       ),
                     ),
                     Container(
-                      padding: EdgeInsets.fromLTRB(10, 10, 0, 10),
-                      margin: EdgeInsets.fromLTRB(0, 10, 140, 0),
+                      padding: const EdgeInsets.fromLTRB(10, 10, 0, 10),
+                      margin: const EdgeInsets.fromLTRB(0, 10, 140, 0),
                       foregroundDecoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30),
                         border:
@@ -1177,7 +1178,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           CircleAvatar(
                             backgroundColor: Colors.pink.shade50,
                             radius: 15,
-                            child: Text(
+                            child: const Text(
                               "J",
                               style: TextStyle(
                                 color: Colors.black,
@@ -1185,17 +1186,17 @@ class _MyHomePageState extends State<MyHomePage> {
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 10,
                           ),
-                          Text("Jacob J.")
+                          const Text("Jacob J.")
                         ],
                       ),
                     ),
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               Row(
@@ -1205,7 +1206,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     size: 15,
                     color: Colors.grey.shade700,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 5,
                   ),
                   Text(

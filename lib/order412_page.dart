@@ -16,18 +16,18 @@ class _Order412PageState extends State<Order412Page> {
       appBar: AppBar(
         automaticallyImplyLeading: true,
         centerTitle: true,
-        title: Text('Order #412'),
+        title: const Text('Order #412'),
       ),
       body: SingleChildScrollView(
-        physics: AlwaysScrollableScrollPhysics(),
+        physics: const AlwaysScrollableScrollPhysics(),
         scrollDirection: Axis.vertical,
         child: Container(
-          padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+          padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                padding: EdgeInsets.fromLTRB(5, 25, 10, 25),
+                padding: const EdgeInsets.fromLTRB(5, 25, 10, 25),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8),
                   color: Colors.grey.shade800,
@@ -37,23 +37,23 @@ class _Order412PageState extends State<Order412Page> {
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.white,
-                        shape: CircleBorder(),
+                        shape: const CircleBorder(),
                       ),
                       onPressed: () {},
-                      child: Text(
+                      child: const Text(
                         "1",
                         style: TextStyle(
                           color: Colors.black,
                         ),
                       ),
                     ),
-                    Text(
+                    const Text(
                       'Fish and chips',
                       style: TextStyle(
                         fontSize: 20,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Text(
@@ -63,10 +63,10 @@ class _Order412PageState extends State<Order412Page> {
                         color: Colors.grey.shade500,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 158,
                     ),
-                    Text(
+                    const Text(
                       "\$17.50",
                       style: TextStyle(
                         fontSize: 20,
@@ -75,11 +75,11 @@ class _Order412PageState extends State<Order412Page> {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               Container(
-                padding: EdgeInsets.fromLTRB(5, 25, 10, 25),
+                padding: const EdgeInsets.fromLTRB(5, 25, 10, 25),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8),
                   color: Colors.grey.shade800,
@@ -89,23 +89,23 @@ class _Order412PageState extends State<Order412Page> {
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.white,
-                        shape: CircleBorder(),
+                        shape: const CircleBorder(),
                       ),
                       onPressed: () {},
-                      child: Text(
+                      child: const Text(
                         "2",
                         style: TextStyle(
                           color: Colors.black,
                         ),
                       ),
                     ),
-                    Text(
+                    const Text(
                       'Lemonade',
                       style: TextStyle(
                         fontSize: 20,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Text(
@@ -115,10 +115,10 @@ class _Order412PageState extends State<Order412Page> {
                         color: Colors.grey.shade500,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 205,
                     ),
-                    Text(
+                    const Text(
                       "\$7.25",
                       style: TextStyle(
                         fontSize: 20,
@@ -127,11 +127,11 @@ class _Order412PageState extends State<Order412Page> {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               Container(
-                padding: EdgeInsets.fromLTRB(5, 25, 10, 25),
+                padding: const EdgeInsets.fromLTRB(5, 25, 10, 25),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8),
                   color: Colors.grey.shade800,
@@ -141,23 +141,23 @@ class _Order412PageState extends State<Order412Page> {
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.white,
-                        shape: CircleBorder(),
+                        shape: const CircleBorder(),
                       ),
                       onPressed: () {},
-                      child: Text(
+                      child: const Text(
                         "3",
                         style: TextStyle(
                           color: Colors.black,
                         ),
                       ),
                     ),
-                    Text(
+                    const Text(
                       'Cappuccino',
                       style: TextStyle(
                         fontSize: 20,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Text(
@@ -167,10 +167,10 @@ class _Order412PageState extends State<Order412Page> {
                         color: Colors.grey.shade500,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 192,
                     ),
-                    Text(
+                    const Text(
                       "\$8.00",
                       style: TextStyle(
                         fontSize: 20,
@@ -179,11 +179,11 @@ class _Order412PageState extends State<Order412Page> {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               Container(
-                padding: EdgeInsets.fromLTRB(5, 25, 10, 25),
+                padding: const EdgeInsets.fromLTRB(5, 25, 10, 25),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8),
                   color: Colors.grey.shade800,
@@ -193,23 +193,23 @@ class _Order412PageState extends State<Order412Page> {
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.white,
-                        shape: CircleBorder(),
+                        shape: const CircleBorder(),
                       ),
                       onPressed: () {},
-                      child: Text(
+                      child: const Text(
                         "4",
                         style: TextStyle(
                           color: Colors.black,
                         ),
                       ),
                     ),
-                    Text(
+                    const Text(
                       'Apple pie',
                       style: TextStyle(
                         fontSize: 20,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Text(
@@ -219,10 +219,10 @@ class _Order412PageState extends State<Order412Page> {
                         color: Colors.grey.shade500,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 205,
                     ),
-                    Text(
+                    const Text(
                       "\$11.50",
                       style: TextStyle(
                         fontSize: 20,
@@ -231,12 +231,12 @@ class _Order412PageState extends State<Order412Page> {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
+                children: const [
                   Text("Subtotal"),
                   Text(
                     "\$44.25",
@@ -247,12 +247,12 @@ class _Order412PageState extends State<Order412Page> {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
+                children: const [
                   Text('Tax 10%'),
                   Text(
                     "\$4.43",
@@ -263,16 +263,16 @@ class _Order412PageState extends State<Order412Page> {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
-              Divider(),
-              SizedBox(
+              const Divider(),
+              const SizedBox(
                 height: 10,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
+                children: const [
                   Text(
                     "Total",
                     style: TextStyle(
@@ -289,11 +289,11 @@ class _Order412PageState extends State<Order412Page> {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
-              Text('Payment Method'),
-              SizedBox(
+              const Text('Payment Method'),
+              const SizedBox(
                 height: 10,
               ),
               Row(
@@ -302,20 +302,20 @@ class _Order412PageState extends State<Order412Page> {
                   Column(
                     children: [
                       Container(
-                        padding: EdgeInsets.fromLTRB(60, 20, 60, 20),
+                        padding: const EdgeInsets.fromLTRB(60, 20, 60, 20),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(5),
                           color: Colors.white,
                         ),
-                        child: Icon(
+                        child: const Icon(
                           Icons.monetization_on_outlined,
                           color: Colors.black,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
-                      Text(
+                      const Text(
                         "Cash",
                         style: TextStyle(
                           fontSize: 20,
@@ -326,7 +326,7 @@ class _Order412PageState extends State<Order412Page> {
                   Column(
                     children: [
                       TextButton(
-                        style: ButtonStyle(
+                        style: const ButtonStyle(
                           overlayColor: MaterialStatePropertyAll(
                             Colors.transparent,
                           ),
@@ -340,7 +340,7 @@ class _Order412PageState extends State<Order412Page> {
                           );
                         },
                         child: Container(
-                          padding: EdgeInsets.fromLTRB(60, 20, 60, 20),
+                          padding: const EdgeInsets.fromLTRB(60, 20, 60, 20),
                           decoration: BoxDecoration(
                             border: Border.all(
                               color: Colors.grey.shade800,
@@ -348,16 +348,16 @@ class _Order412PageState extends State<Order412Page> {
                             ),
                             borderRadius: BorderRadius.circular(5),
                           ),
-                          child: Icon(
+                          child: const Icon(
                             Icons.credit_card_outlined,
                             color: Colors.white,
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
-                      Text(
+                      const Text(
                         "Debit Card",
                         style: TextStyle(
                           fontSize: 20,
@@ -368,7 +368,7 @@ class _Order412PageState extends State<Order412Page> {
                   Column(
                     children: [
                       Container(
-                        padding: EdgeInsets.fromLTRB(60, 20, 60, 20),
+                        padding: const EdgeInsets.fromLTRB(60, 20, 60, 20),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(5),
                           border: Border.all(
@@ -376,15 +376,15 @@ class _Order412PageState extends State<Order412Page> {
                             width: 2,
                           ),
                         ),
-                        child: Icon(
+                        child: const Icon(
                           Icons.qr_code,
                           color: Colors.white,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
-                      Text(
+                      const Text(
                         "E-Wallet",
                         style: TextStyle(
                           fontSize: 20,
@@ -394,11 +394,11 @@ class _Order412PageState extends State<Order412Page> {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 60,
               ),
               Container(
-                padding: EdgeInsets.fromLTRB(200, 20, 195, 20),
+                padding: const EdgeInsets.fromLTRB(200, 20, 195, 20),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(40),
                   color: Colors.white,

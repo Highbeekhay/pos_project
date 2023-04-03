@@ -13,8 +13,8 @@ class _MenuPageState extends State<MenuPage> {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: true,
-        leading: Icon(Icons.notes),
-        actions: [
+        leading: const Icon(Icons.notes),
+        actions: const [
           Text('Table 5'),
           Icon(Icons.keyboard_arrow_down_rounded),
           Padding(
@@ -23,21 +23,21 @@ class _MenuPageState extends State<MenuPage> {
         ],
       ),
       body: Container(
-        padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
+        padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
         child: SingleChildScrollView(
-          physics: AlwaysScrollableScrollPhysics(),
+          physics: const AlwaysScrollableScrollPhysics(),
           scrollDirection: Axis.vertical,
           child: Column(
             children: [
               Container(
-                padding:
-                    EdgeInsets.only(left: 20, top: 10, right: 10, bottom: 10),
+                padding: const EdgeInsets.only(
+                    left: 20, top: 10, right: 10, bottom: 10),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(5),
                   color: Colors.grey.shade800,
                 ),
                 child: TextButton(
-                  style: ButtonStyle(
+                  style: const ButtonStyle(
                     overlayColor: MaterialStatePropertyAll(
                       Colors.black12,
                     ),
@@ -49,7 +49,7 @@ class _MenuPageState extends State<MenuPage> {
                         Icons.search,
                         color: Colors.grey.shade500,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 10,
                       ),
                       Text(
@@ -63,32 +63,32 @@ class _MenuPageState extends State<MenuPage> {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               SingleChildScrollView(
-                physics: AlwaysScrollableScrollPhysics(),
+                physics: const AlwaysScrollableScrollPhysics(),
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   children: [
                     Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: Color.fromARGB(255, 223, 222, 222),
+                        color: const Color.fromARGB(255, 223, 222, 222),
                       ),
-                      padding: EdgeInsets.fromLTRB(15, 20, 70, 15),
+                      padding: const EdgeInsets.fromLTRB(15, 20, 70, 15),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Icon(
+                          const Icon(
                             Icons.local_cafe,
                             color: Colors.black,
                             weight: 20,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 40,
                           ),
-                          Text(
+                          const Text(
                             "Breakfast",
                             style: TextStyle(
                               color: Colors.black,
@@ -106,7 +106,7 @@ class _MenuPageState extends State<MenuPage> {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Container(
@@ -114,19 +114,19 @@ class _MenuPageState extends State<MenuPage> {
                         borderRadius: BorderRadius.circular(10),
                         color: Colors.purple.shade100,
                       ),
-                      padding: EdgeInsets.fromLTRB(15, 20, 105, 15),
+                      padding: const EdgeInsets.fromLTRB(15, 20, 105, 15),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Icon(
+                          const Icon(
                             Icons.dinner_dining_rounded,
                             color: Colors.black,
                             weight: 20,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 40,
                           ),
-                          Text(
+                          const Text(
                             "Soups",
                             style: TextStyle(
                               color: Colors.black,
@@ -144,7 +144,7 @@ class _MenuPageState extends State<MenuPage> {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Container(
@@ -152,19 +152,19 @@ class _MenuPageState extends State<MenuPage> {
                         borderRadius: BorderRadius.circular(10),
                         color: Colors.blue.shade50,
                       ),
-                      padding: EdgeInsets.fromLTRB(15, 20, 105, 15),
+                      padding: const EdgeInsets.fromLTRB(15, 20, 105, 15),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Icon(
+                          const Icon(
                             Icons.ramen_dining_rounded,
                             color: Colors.black,
                             weight: 20,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 40,
                           ),
-                          Text(
+                          const Text(
                             "Pasta",
                             style: TextStyle(
                               color: Colors.black,
@@ -185,21 +185,21 @@ class _MenuPageState extends State<MenuPage> {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Divider(
                 color: Colors.grey.shade800,
                 thickness: 2,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    padding: EdgeInsets.fromLTRB(20, 10, 40, 10),
+                    padding: const EdgeInsets.fromLTRB(20, 10, 40, 10),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       color: Colors.grey.shade800,
@@ -216,14 +216,14 @@ class _MenuPageState extends State<MenuPage> {
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Icon(
                               Icons.arrow_forward_rounded,
                               color: Colors.grey.shade500,
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Text(
@@ -235,10 +235,10 @@ class _MenuPageState extends State<MenuPage> {
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 25,
                         ),
-                        Text(
+                        const Text(
                           'Mushroom soup',
                           style: TextStyle(
                             fontSize: 20,
@@ -253,7 +253,7 @@ class _MenuPageState extends State<MenuPage> {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 40,
                         ),
                         Row(
@@ -272,16 +272,16 @@ class _MenuPageState extends State<MenuPage> {
                                 color: Colors.grey.shade500,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
-                            Text(
+                            const Text(
                               "0",
                               style: TextStyle(
                                 fontSize: 20,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
                             OutlinedButton(
@@ -293,7 +293,7 @@ class _MenuPageState extends State<MenuPage> {
                                 shadowColor: Colors.grey.shade800,
                               ),
                               onPressed: () {},
-                              child: Icon(
+                              child: const Icon(
                                 Icons.add,
                                 color: Colors.white,
                               ),
@@ -304,7 +304,7 @@ class _MenuPageState extends State<MenuPage> {
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.fromLTRB(20, 10, 40, 10),
+                    padding: const EdgeInsets.fromLTRB(20, 10, 40, 10),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       color: Colors.purple.shade100,
@@ -321,14 +321,14 @@ class _MenuPageState extends State<MenuPage> {
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Icon(
                               Icons.arrow_forward_rounded,
                               color: Colors.grey.shade800,
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Text(
@@ -340,10 +340,10 @@ class _MenuPageState extends State<MenuPage> {
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 25,
                         ),
-                        Text(
+                        const Text(
                           'Bagnum',
                           style: TextStyle(
                             fontSize: 20,
@@ -359,7 +359,7 @@ class _MenuPageState extends State<MenuPage> {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 40,
                         ),
                         Row(
@@ -373,22 +373,22 @@ class _MenuPageState extends State<MenuPage> {
                                 shadowColor: Colors.grey.shade800,
                               ),
                               onPressed: () {},
-                              child: Icon(
+                              child: const Icon(
                                 Icons.remove,
                                 color: Colors.black,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
-                            Text(
+                            const Text(
                               "1",
                               style: TextStyle(
                                 fontSize: 20,
                                 color: Colors.black,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
                             OutlinedButton(
@@ -400,7 +400,7 @@ class _MenuPageState extends State<MenuPage> {
                                 shadowColor: Colors.grey.shade800,
                               ),
                               onPressed: () {},
-                              child: Icon(
+                              child: const Icon(
                                 Icons.add,
                                 color: Colors.black,
                               ),
@@ -412,14 +412,14 @@ class _MenuPageState extends State<MenuPage> {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    padding: EdgeInsets.fromLTRB(20, 10, 40, 10),
+                    padding: const EdgeInsets.fromLTRB(20, 10, 40, 10),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         color: Colors.grey.shade800),
@@ -434,14 +434,14 @@ class _MenuPageState extends State<MenuPage> {
                                 color: Colors.grey.shade500,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Icon(
                               Icons.arrow_forward_rounded,
                               color: Colors.grey.shade500,
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Text(
@@ -452,10 +452,10 @@ class _MenuPageState extends State<MenuPage> {
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 25,
                         ),
-                        Text(
+                        const Text(
                           'Cacciucco',
                           style: TextStyle(
                               fontSize: 20, fontWeight: FontWeight.bold),
@@ -467,7 +467,7 @@ class _MenuPageState extends State<MenuPage> {
                             fontSize: 20,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 40,
                         ),
                         Row(
@@ -486,16 +486,16 @@ class _MenuPageState extends State<MenuPage> {
                                 color: Colors.grey.shade500,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
-                            Text(
+                            const Text(
                               "0",
                               style: TextStyle(
                                 fontSize: 20,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
                             OutlinedButton(
@@ -507,7 +507,7 @@ class _MenuPageState extends State<MenuPage> {
                                 shadowColor: Colors.grey.shade800,
                               ),
                               onPressed: () {},
-                              child: Icon(
+                              child: const Icon(
                                 Icons.add,
                                 color: Colors.white,
                               ),
@@ -518,7 +518,7 @@ class _MenuPageState extends State<MenuPage> {
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.fromLTRB(20, 10, 40, 10),
+                    padding: const EdgeInsets.fromLTRB(20, 10, 40, 10),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         color: Colors.grey.shade800),
@@ -533,14 +533,14 @@ class _MenuPageState extends State<MenuPage> {
                                 color: Colors.grey.shade500,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Icon(
                               Icons.arrow_forward_rounded,
                               color: Colors.grey.shade500,
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Text(
@@ -551,10 +551,10 @@ class _MenuPageState extends State<MenuPage> {
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 25,
                         ),
-                        Text(
+                        const Text(
                           'Fish soup',
                           style: TextStyle(
                               fontSize: 20, fontWeight: FontWeight.bold),
@@ -566,7 +566,7 @@ class _MenuPageState extends State<MenuPage> {
                             fontSize: 20,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 40,
                         ),
                         Row(
@@ -585,16 +585,16 @@ class _MenuPageState extends State<MenuPage> {
                                 color: Colors.grey.shade500,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
-                            Text(
+                            const Text(
                               "0",
                               style: TextStyle(
                                 fontSize: 20,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
                             OutlinedButton(
@@ -606,7 +606,7 @@ class _MenuPageState extends State<MenuPage> {
                                 shadowColor: Colors.grey.shade800,
                               ),
                               onPressed: () {},
-                              child: Icon(
+                              child: const Icon(
                                 Icons.add,
                                 color: Colors.white,
                               ),
@@ -618,14 +618,14 @@ class _MenuPageState extends State<MenuPage> {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    padding: EdgeInsets.fromLTRB(20, 10, 40, 10),
+                    padding: const EdgeInsets.fromLTRB(20, 10, 40, 10),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         color: Colors.grey.shade800),
@@ -640,14 +640,14 @@ class _MenuPageState extends State<MenuPage> {
                                 color: Colors.grey.shade500,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Icon(
                               Icons.arrow_forward_rounded,
                               color: Colors.grey.shade500,
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Text(
@@ -658,10 +658,10 @@ class _MenuPageState extends State<MenuPage> {
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 25,
                         ),
-                        Text(
+                        const Text(
                           'Vegan soup',
                           style: TextStyle(
                               fontSize: 20, fontWeight: FontWeight.bold),
@@ -673,7 +673,7 @@ class _MenuPageState extends State<MenuPage> {
                             fontSize: 20,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 40,
                         ),
                         Row(
@@ -692,16 +692,16 @@ class _MenuPageState extends State<MenuPage> {
                                 color: Colors.grey.shade500,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
-                            Text(
+                            const Text(
                               "0",
                               style: TextStyle(
                                 fontSize: 20,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
                             OutlinedButton(
@@ -713,7 +713,7 @@ class _MenuPageState extends State<MenuPage> {
                                 shadowColor: Colors.grey.shade800,
                               ),
                               onPressed: () {},
-                              child: Icon(
+                              child: const Icon(
                                 Icons.add,
                                 color: Colors.white,
                               ),
@@ -724,7 +724,7 @@ class _MenuPageState extends State<MenuPage> {
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.fromLTRB(20, 10, 40, 10),
+                    padding: const EdgeInsets.fromLTRB(20, 10, 40, 10),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         color: Colors.grey.shade800),
@@ -739,14 +739,14 @@ class _MenuPageState extends State<MenuPage> {
                                 color: Colors.grey.shade500,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Icon(
                               Icons.arrow_forward_rounded,
                               color: Colors.grey.shade500,
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Text(
@@ -757,10 +757,10 @@ class _MenuPageState extends State<MenuPage> {
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 25,
                         ),
-                        Text(
+                        const Text(
                           'Norwegian soup',
                           style: TextStyle(
                               fontSize: 20, fontWeight: FontWeight.bold),
@@ -772,7 +772,7 @@ class _MenuPageState extends State<MenuPage> {
                             fontSize: 20,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 40,
                         ),
                         Row(
@@ -791,16 +791,16 @@ class _MenuPageState extends State<MenuPage> {
                                 color: Colors.grey.shade500,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
-                            Text(
+                            const Text(
                               "0",
                               style: TextStyle(
                                 fontSize: 20,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
                             OutlinedButton(
@@ -812,7 +812,7 @@ class _MenuPageState extends State<MenuPage> {
                                 shadowColor: Colors.grey.shade800,
                               ),
                               onPressed: () {},
-                              child: Icon(
+                              child: const Icon(
                                 Icons.add,
                                 color: Colors.white,
                               ),
@@ -829,8 +829,8 @@ class _MenuPageState extends State<MenuPage> {
         ),
       ),
       bottomNavigationBar: Container(
-        padding: EdgeInsets.fromLTRB(170, 20, 50, 20),
-        margin: EdgeInsets.fromLTRB(20, 10, 20, 20),
+        padding: const EdgeInsets.fromLTRB(170, 20, 50, 20),
+        margin: const EdgeInsets.fromLTRB(20, 10, 20, 20),
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(40), color: Colors.white),
         child: Text(

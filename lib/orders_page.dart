@@ -17,26 +17,26 @@ class _OrdersPageState extends State<OrdersPage> {
         automaticallyImplyLeading: true,
       ),
       body: Container(
-        padding: EdgeInsets.fromLTRB(20, 20, 20, 40),
+        padding: const EdgeInsets.fromLTRB(20, 20, 20, 40),
         child: Column(
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
+                const Text(
                   "Orders",
                   style: TextStyle(
                     fontSize: 30,
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
+                  padding: const EdgeInsets.fromLTRB(10, 5, 10, 5),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     color: Colors.grey.shade800,
                   ),
                   child: Row(
-                    children: [
+                    children: const [
                       Text('Feb 4, 2023'),
                       SizedBox(
                         width: 5,
@@ -49,11 +49,11 @@ class _OrdersPageState extends State<OrdersPage> {
                 )
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Container(
-              padding: EdgeInsets.fromLTRB(15, 15, 15, 25),
+              padding: const EdgeInsets.fromLTRB(15, 15, 15, 25),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(5),
                 border: Border.all(
@@ -65,7 +65,7 @@ class _OrdersPageState extends State<OrdersPage> {
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
+                    children: const [
                       Text(
                         'Today\'s upsale',
                         style: TextStyle(
@@ -83,27 +83,27 @@ class _OrdersPageState extends State<OrdersPage> {
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   Row(
                     children: [
                       Container(
-                        padding: EdgeInsets.fromLTRB(15, 15, 15, 15),
+                        padding: const EdgeInsets.fromLTRB(15, 15, 15, 15),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           color: Colors.grey.shade800,
                         ),
-                        child: Icon(
+                        child: const Icon(
                           Icons.room_service,
                           color: Colors.white,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 20,
                       ),
                       TextButton(
-                        style: ButtonStyle(
+                        style: const ButtonStyle(
                           overlayColor:
                               MaterialStatePropertyAll(Colors.transparent),
                         ),
@@ -118,7 +118,7 @@ class _OrdersPageState extends State<OrdersPage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
+                            const Text(
                               'Fish soup',
                               style: TextStyle(
                                 fontSize: 22,
@@ -134,10 +134,10 @@ class _OrdersPageState extends State<OrdersPage> {
                                     color: Colors.grey.shade500,
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 5,
                                 ),
-                                Text(
+                                const Text(
                                   "412",
                                   style: TextStyle(
                                     fontSize: 17,
@@ -151,27 +151,27 @@ class _OrdersPageState extends State<OrdersPage> {
                       )
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 15,
                   ),
                   Row(
                     children: [
                       Container(
-                        padding: EdgeInsets.fromLTRB(15, 15, 15, 15),
+                        padding: const EdgeInsets.fromLTRB(15, 15, 15, 15),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           color: Colors.grey.shade800,
                         ),
-                        child: Icon(
+                        child: const Icon(
                           Icons.dinner_dining_rounded,
                           color: Colors.white,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 20,
                       ),
                       TextButton(
-                        style: ButtonStyle(
+                        style: const ButtonStyle(
                           overlayColor: MaterialStatePropertyAll(
                             Colors.transparent,
                           ),
@@ -187,7 +187,7 @@ class _OrdersPageState extends State<OrdersPage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
+                            const Text(
                               'Bagnun soup',
                               style:
                                   TextStyle(fontSize: 22, color: Colors.white),
@@ -201,10 +201,10 @@ class _OrdersPageState extends State<OrdersPage> {
                                     color: Colors.grey.shade500,
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 5,
                                 ),
-                                Text(
+                                const Text(
                                   "246",
                                   style: TextStyle(
                                       fontSize: 17, color: Colors.white),
@@ -216,27 +216,27 @@ class _OrdersPageState extends State<OrdersPage> {
                       )
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 15,
                   ),
                   Row(
                     children: [
                       Container(
-                        padding: EdgeInsets.fromLTRB(15, 15, 15, 15),
+                        padding: const EdgeInsets.fromLTRB(15, 15, 15, 15),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           color: Colors.grey.shade800,
                         ),
-                        child: Icon(
+                        child: const Icon(
                           Icons.coffee,
                           color: Colors.white,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 20,
                       ),
                       TextButton(
-                        style: ButtonStyle(
+                        style: const ButtonStyle(
                           overlayColor: MaterialStatePropertyAll(
                             Colors.transparent,
                           ),
@@ -245,7 +245,7 @@ class _OrdersPageState extends State<OrdersPage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
+                            const Text(
                               'Fried egg',
                               style: TextStyle(
                                 fontSize: 22,
@@ -261,10 +261,10 @@ class _OrdersPageState extends State<OrdersPage> {
                                     color: Colors.grey.shade500,
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 5,
                                 ),
-                                Text(
+                                const Text(
                                   "98",
                                   style: TextStyle(
                                     fontSize: 17,
@@ -278,27 +278,27 @@ class _OrdersPageState extends State<OrdersPage> {
                       )
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 15,
                   ),
                   Row(
                     children: [
                       Container(
-                        padding: EdgeInsets.fromLTRB(15, 15, 15, 15),
+                        padding: const EdgeInsets.fromLTRB(15, 15, 15, 15),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           color: Colors.grey.shade800,
                         ),
-                        child: Icon(
+                        child: const Icon(
                           Icons.soup_kitchen,
                           color: Colors.white,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 20,
                       ),
                       TextButton(
-                        style: ButtonStyle(
+                        style: const ButtonStyle(
                           overlayColor: MaterialStatePropertyAll(
                             Colors.transparent,
                           ),
@@ -307,7 +307,7 @@ class _OrdersPageState extends State<OrdersPage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
+                            const Text(
                               'Norwegian soup',
                               style: TextStyle(
                                 fontSize: 22,
@@ -323,10 +323,10 @@ class _OrdersPageState extends State<OrdersPage> {
                                     color: Colors.grey.shade500,
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 5,
                                 ),
-                                Text(
+                                const Text(
                                   "82",
                                   style: TextStyle(
                                     fontSize: 17,

@@ -15,18 +15,18 @@ class _Order246PageState extends State<Order246Page> {
       appBar: AppBar(
         automaticallyImplyLeading: true,
         centerTitle: true,
-        title: Text('Order #246'),
+        title: const Text('Order #246'),
       ),
       body: SingleChildScrollView(
-        physics: AlwaysScrollableScrollPhysics(),
+        physics: const AlwaysScrollableScrollPhysics(),
         scrollDirection: Axis.vertical,
         child: Container(
-          padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+          padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                padding: EdgeInsets.fromLTRB(5, 25, 10, 25),
+                padding: const EdgeInsets.fromLTRB(5, 25, 10, 25),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8),
                   color: Colors.grey.shade800,
@@ -36,23 +36,23 @@ class _Order246PageState extends State<Order246Page> {
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.white,
-                        shape: CircleBorder(),
+                        shape: const CircleBorder(),
                       ),
                       onPressed: () {},
-                      child: Text(
+                      child: const Text(
                         "1",
                         style: TextStyle(
                           color: Colors.black,
                         ),
                       ),
                     ),
-                    Text(
+                    const Text(
                       'Bagnum',
                       style: TextStyle(
                         fontSize: 20,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Text(
@@ -62,10 +62,10 @@ class _Order246PageState extends State<Order246Page> {
                         color: Colors.grey.shade500,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 225,
                     ),
-                    Text(
+                    const Text(
                       "\$9.30",
                       style: TextStyle(
                         fontSize: 20,
@@ -74,11 +74,11 @@ class _Order246PageState extends State<Order246Page> {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               Container(
-                padding: EdgeInsets.fromLTRB(5, 25, 10, 25),
+                padding: const EdgeInsets.fromLTRB(5, 25, 10, 25),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8),
                   color: Colors.grey.shade800,
@@ -88,23 +88,23 @@ class _Order246PageState extends State<Order246Page> {
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.white,
-                        shape: CircleBorder(),
+                        shape: const CircleBorder(),
                       ),
                       onPressed: () {},
-                      child: Text(
+                      child: const Text(
                         "2",
                         style: TextStyle(
                           color: Colors.black,
                         ),
                       ),
                     ),
-                    Text(
+                    const Text(
                       'Fish soup',
                       style: TextStyle(
                         fontSize: 20,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Text(
@@ -114,10 +114,10 @@ class _Order246PageState extends State<Order246Page> {
                         color: Colors.grey.shade500,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 200,
                     ),
-                    Text(
+                    const Text(
                       "\$10.20",
                       style: TextStyle(
                         fontSize: 20,
@@ -126,11 +126,11 @@ class _Order246PageState extends State<Order246Page> {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               Container(
-                padding: EdgeInsets.fromLTRB(5, 25, 10, 25),
+                padding: const EdgeInsets.fromLTRB(5, 25, 10, 25),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8),
                   color: Colors.grey.shade800,
@@ -140,23 +140,23 @@ class _Order246PageState extends State<Order246Page> {
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.white,
-                        shape: CircleBorder(),
+                        shape: const CircleBorder(),
                       ),
                       onPressed: () {},
-                      child: Text(
+                      child: const Text(
                         "3",
                         style: TextStyle(
                           color: Colors.black,
                         ),
                       ),
                     ),
-                    Text(
+                    const Text(
                       'Citrus lemonade',
                       style: TextStyle(
                         fontSize: 20,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Text(
@@ -166,10 +166,10 @@ class _Order246PageState extends State<Order246Page> {
                         color: Colors.grey.shade500,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 150,
                     ),
-                    Text(
+                    const Text(
                       "\$4.00",
                       style: TextStyle(
                         fontSize: 20,
@@ -178,7 +178,7 @@ class _Order246PageState extends State<Order246Page> {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               Container(
@@ -189,9 +189,9 @@ class _Order246PageState extends State<Order246Page> {
                     width: 2,
                   ),
                 ),
-                padding: EdgeInsets.fromLTRB(200, 10, 200, 10),
+                padding: const EdgeInsets.fromLTRB(200, 10, 200, 10),
                 child: Row(
-                  children: [
+                  children: const [
                     Icon(
                       Icons.add,
                       size: 18,
@@ -203,12 +203,12 @@ class _Order246PageState extends State<Order246Page> {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
+                children: const [
                   Text("Subtotal"),
                   Text(
                     "\$23.50",
@@ -219,12 +219,12 @@ class _Order246PageState extends State<Order246Page> {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
+                children: const [
                   Text('Tax 10%'),
                   Text(
                     "\$2.35",
@@ -235,16 +235,16 @@ class _Order246PageState extends State<Order246Page> {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
-              Divider(),
-              SizedBox(
+              const Divider(),
+              const SizedBox(
                 height: 10,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
+                children: const [
                   Text(
                     "Total",
                     style: TextStyle(
@@ -261,11 +261,11 @@ class _Order246PageState extends State<Order246Page> {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 60,
               ),
               Container(
-                padding: EdgeInsets.fromLTRB(175, 10, 175, 10),
+                padding: const EdgeInsets.fromLTRB(175, 10, 175, 10),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(40),
                   color: Colors.white,
