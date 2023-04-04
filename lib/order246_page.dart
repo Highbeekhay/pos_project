@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:pos_project/orders_page.dart';
 
 class Order246Page extends StatefulWidget {
   const Order246Page({super.key});
